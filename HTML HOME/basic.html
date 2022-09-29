@@ -174,7 +174,7 @@ USA</address><!-- YAZAR YA DA SAHİP İÇİN İLETİŞİM BİLGİLERİ TANIMLANI
 </html> -->
 
 <h2 style="color: brown;">External CSS</h2>
-
+<hr>
 <!DOCTYPE html>
 <html>
   <head>
@@ -186,9 +186,7 @@ USA</address><!-- YAZAR YA DA SAHİP İÇİN İLETİŞİM BİLGİLERİ TANIMLANI
     }
     p {
       border: 2px solid powderblue;
-      padding: 30px;
-      margin: 50px;
-      color: red;
+      color: black;
       font-family: courier;
       font-size: 160%;
     }
@@ -198,4 +196,121 @@ USA</address><!-- YAZAR YA DA SAHİP İÇİN İLETİŞİM BİLGİLERİ TANIMLANI
     <h1> This is a heading</h1>
     <p>This is a paragraph.</p>
   </body>
+</html>
+
+<hr>
+
+<h1 style="background-color: yellow;">HTML LINKS</h1>
+<h2>HTML Links - Syntax</h2>
+<a href="https://github.com/busraustunel">Busra Ustunel Github</a>
+<br>
+<h2>The Target Attribute</h2>
+<a href="https://github.com/busraustunel" target="_blank">Busra Ustunel Github</a>
+<p>_self : Varsayılan. Belgeyi tıklanılan sekmede açar.<br>
+_blank: Belgeyi yeni sekmede açar.<br>
+_parent: Belgeyi ana çerçevede açar.<br>
+_top: Belgeyi pencerenin tam gövdesinde açar.</p>
+
+<h2>Bir resmi bağlantı olarak kullanmk için</h2>
+<a href="default.asp">
+  <img src = "smiley.git" alt="HTML Tutorial" style="width:42px; height: 42px;">
+</a>
+<br>
+<h2>Link Buton</h2>
+<button onclik="document.location = 'default.asp' ">HTML Tutorial</button>
+<br>
+<h2>Link Başlıkları</h2>
+<a href="https://github.com/busraustunel/HtmlCssBasicTutorial" title="Go to HTML Documents">Visit my HTML Tutorial</a>
+<hr>
+
+<h1>LINK COLORS</h1>
+<p>Ziyaret edilmemiş bir bağlantı, altı çizili olmayan yeşil renkte olacaktır. Ziyaret edilen bir bağlantı, altı çizili olmayan pembe olacaktır.
+  Aktif bir bağlantı sarı ve altı çizili olacaktır. Ek olarak,
+  bir bağlantının üzerine gelindiğinde (a:hover) kırmızı olur ve altı çizilir.
+</p>
+<br>
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(173, 44, 66);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color:yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+<br>
+<style>
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover, a:active{
+    background-color: red;
+  }
+</style>
+<hr>
+<h1>Create Bookmark</h1>
+<h2 id = "C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<p>Ayrıca başka bir sayfadaki bookmarka da link ekleyebiliriz.</p>
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<hr>
+
+<h1>HTML IMAGES</h1>
+<img src = "img_girl.jpg" alt = "Girl in a jacket.">
+<p>src: Resmin spesifik konumunu belirtir.
+  <br> alt: Alternatif metin sunmamıza yarar.
+</p>
+<br>
+<h2>Image Maps</h2>
+<img src = "workplace.jpg" alt="Workplace" usemap="#workmap" >
+
+<map name=""workmap> 
+ <area shape = "rect" coords="34,44,270,350" alt="Computer" href="computer.htm" >
+
+</map>
+
+<h2>Picture Öğesi</h2>
+<p>HTML Picture öğesi, görüntü kaynaklarını belirlemede daha fazla esneklik sağlar.
+  Öğe, her biri nitelik aracılığıyla farklı görüntülere atıfta bulunan bir picture veya daha fazla öğre içerir.
+  Bu şekilde tarayıcı, mevcut görünüme ve/veya cihaza en uygun görüntüyü seçebilir.
+</p>
+
+<picture>
+  <source media="(min-width: 650px" srcset="img_food.jpg">
+  <source media = "(min-width: 465px" srcset="img_car.jpg">
+  <img src = "img_girl.jpg">
+</picture>
+<hr>
+<h1>TML FAVICON</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page Title</title>
+    <link rel ="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  </head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph</p>
+</body>
 </html>
