@@ -317,8 +317,31 @@ _top: Belgeyi pencerenin tam gövdesinde açar.</p>
 <hr>
 
 <h1>HTML TABLES</h1>
-<table style="border:  1px solid black; border-collapse: collapse;  border-style: dotted;
-">
+
+<table>
+  <style>
+    table,
+th,
+td {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: #96D4D4;
+  padding: 15px;
+
+
+
+}
+th, td {
+  background-color: #96D4D4;
+}
+  </style>
+ <p>td tablo verilerini tanımlar.
+  tr tablo satırlarını tanımlar.
+  th tablo başlıklarını tanımlar.
+ </p>
   <tr>
     <th >
       Company
@@ -354,6 +377,7 @@ _top: Belgeyi pencerenin tam gövdesinde açar.</p>
   </tr>
 </table>
 
+
 <table>
   <tr>
     <td>Emil</td>
@@ -386,3 +410,152 @@ _top: Belgeyi pencerenin tam gövdesinde açar.</p>
 </table>
 <hr>
 
+<h1>HTML Lists</h1>
+
+<h2>Unordered HTML List</h2>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Ordered HTML List</h2>
+<ol> 
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+
+<h2>HTML Description Lists</h2>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- balck hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>Nested HTML Lists</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea
+  <ul>
+    <li>Black tea</li>
+    <li>Green tea</li>
+  </ul>
+</li>
+<li>Milk</li>
+</ul>
+
+<h2> Horizontal List with CSS</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+<hr>
+
+
+<h1>HTML Block and Inline Elements</h1>
+<p>Blok düzeyinde bir öğe her zaman yeni bir satırda başlar ve tarayıcı otomatik olarak öğrenin önüne ve arkasına biraz kenar boşluğu ekler.</p>
+
+<p>Hello World</p>
+<div>Hello World</div>
+<span>Hello World</span>
+
+<div style="background-color:blue;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<p> span metnin bir bölümünü veya bir belgenin bir bölümünü işaretlemek için kullanılan satır içi bir kaptır.
+  CSS ile birlikte kullanıldığında, öğe metnin bölümlerine stil vermek için kullanılabilir.
+</p>
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+<hr>
+
+<h1>HTML Classes</h1>
+<!DOCTYPE html>
+<head>
+  <style>
+    .city{
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France</p>
+  </div>
+
+  <div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p></div>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+
+<h1>MultiClasses</h1>
+<h2 class="city main">London</h2>
+<h2 class = "city">Paris</h2>
+<h2 class = "city">Tokyo </h2>
+
+<hr>
