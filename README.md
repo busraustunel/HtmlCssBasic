@@ -10,3 +10,8 @@ This repository contains summary information and codes for those who want to lea
 
 
 ![2](https://user-images.githubusercontent.com/69143203/192813689-f83c86d7-e98b-45a8-8678-5dff5225cfe4.png)
+
+
+![1](https://user-images.githubusercontent.com/69143203/193366419-f8b6a5e1-dbb8-494e-9b10-af15d35ad1c4.png)
+
+
